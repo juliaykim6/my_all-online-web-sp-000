@@ -2,7 +2,7 @@ require 'pry'
 
 def my_all?(collection)
   i = 0
-  new_collection = []
+  #new_collection = []
   while i < collection.length
     return false if !yield(collection[i])
     i = i + 1
