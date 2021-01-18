@@ -9,9 +9,4 @@ def my_all?(collection)
   end
 end
 
-  if new_collection.include?(false)
-    false
-  else
-    true
-  end
-end
+
