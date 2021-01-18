@@ -4,9 +4,10 @@ def my_all?(collection)
   i = 0
   new_collection = []
   while i < collection.length
-    new_collection << yield(collection[i])
+    return false if !yield(collection[i])
     i = i + 1
   end
+end
 
   if new_collection.include?(false)
     false
